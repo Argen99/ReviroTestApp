@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    tools:background="@color/light_blue">
+
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:foreground="?attr/selectableItemBackground"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_remove"
+        tools:ignore="ContentDescription" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start">
+
+            <TextView
+                android:id="@+id/tv_temp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto_semibold"
+                android:textSize="64sp"
+                android:textColor="@color/white1"
+                android:layout_height="wrap_content"
+                tools:text="12" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto_semibold"
+                android:textSize="32sp"
+                android:textColor="@color/white1"
+                android:layout_height="wrap_content"
+                tools:text="Tehran" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="16sp"
+                android:textColor="@color/light_grey"
+                android:layout_height="wrap_content"
+                tools:text="17 : 45 PM" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:id="@+id/iv_weather_ic"
+                android:layout_width="148dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18sp"
+                android:textColor="@color/light_grey"
+                android:layout_height="wrap_content"
+                tools:text="partly cloudy" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_purple"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+[versions]
+agp = "8.1.1"
+kotlin-android = "1.9.0"
+kotlin-jvm = "1.9.0"
+core-ktx = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+lifecycle = "2.7.0"
+navigation = "2.7.6"
+view-binding-delegate = "1.5.9"
+koin = "3.5.3"
+room = "2.6.1"
+retrofit = "2.9.0"
+logging-interceptor = "4.11.0"
+coroutines = "1.7.3"
+serialization = "1.6.2"
+dotsindicator = "5.0"
+glide = "4.16.0"
+mockito = "5.0.0"
+mockwebserver = "4.11.0"
+espresso = "3.5.1"
+junit-ext = "1.1.5"
+truth = "1.4.2"
+turbine = "1.1.0"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+#UI
+ui-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+ui-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+ui-viewBindingDelegate = { group = "com.github.kirich1409", name = "viewbindingpropertydelegate-noreflection", version.ref = "view-binding-delegate" }
+ui-dotsindicator = { group = "com.tbuonomo", name = "dotsindicator", version.ref = "dotsindicator" }
+ui-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+ui-glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+ui-glide-okhttp3Integration = { group = "com.github.bumptech.glide", name = "okhttp3-integration", version.ref = "glide" }
+
+#Lifecycle
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+#Navigation
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+
+#Koin
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+
+#Room
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+#Squareup
+retrofit2-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit2-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logging-interceptor" }
+
+#Jetbrains
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+
+#Test
+test-junit = { group = "junit", name = "junit", version.ref = "junit" }
+test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit-ext" }
+test-truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+test-mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+test-mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockito" }
+test-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockwebserver" }
+test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+test-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+test-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+
+[plugins]
+agp-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-android" }
+agp-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm" }
+navigation-safeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-android" }
+
+[bundles]
+ui = ["ui-material", "ui-constraintlayout", "ui-viewBindingDelegate", "ui-dotsindicator", "ui-glide",
+"ui-glide-okhttp3Integration"]
+lifecycle = ["lifecycle-livedata", "lifecycle-viewmodel", "lifecycle-runtime"]
+navigation = ["navigation-fragment", "navigation-ui"]
+squareup = ["retrofit2-retrofit", "retrofit2-converter-gson", "okhttp3-logging-interceptor"]
+unitTesting = ["test-junit","test-ext-junit", "test-truth", "test-mockito-core", "test-mockito-kotlin"]
